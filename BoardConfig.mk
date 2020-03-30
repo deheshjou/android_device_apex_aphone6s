@@ -102,6 +102,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 
 # SELinux
 #BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
 # Treble
 BOARD_VNDK_VERSION := current
