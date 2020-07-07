@@ -1,2 +1,2 @@
-add_lunch_combo omni_yggdrasil-userdebug
-add_lunch_combo omni_yggdrasil-eng
+add_lunch_combo omni_aphone6s-userdebug
+add_lunch_combo omni_aphone6s-eng

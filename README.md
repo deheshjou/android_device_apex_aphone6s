@@ -1,2 +1,2 @@
-# android_device_volla_yggdrasil-twrp
-twrp device tree for vollaphone
+# android_device_apex_aphone6s
+twrp device tree for Aphone 6s
