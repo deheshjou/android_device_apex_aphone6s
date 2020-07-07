@@ -2,7 +2,7 @@
 /system_image   emmc    /dev/block/platform/bootdevice/by-name/system            flags=flashimg=1
 /vendor         ext4    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/platform/bootdevice/by-name/vendor            flags=display="Vendor Image";backup=1;flashimg=1
-/data           ext4    /dev/block/platform/bootdevice/by-name/userdata          flags=forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata
+/data           ext4    /dev/block/platform/bootdevice/by-name/userdata          flags=encryptable=/dev/block/platform/bootdevice/by-name/metadata
 /cache          ext4    /dev/block/platform/bootdevice/by-name/cache             flags=backup=1;wipeingui;wipeduringfactoryreset
 /boot           emmc    /dev/block/platform/bootdevice/by-name/boot              flags=display="Boot";backup=1;flashimg=1
 /recovery       emmc    /dev/block/platform/bootdevice/by-name/recovery          flags=display="Recovery";backup=1;flashimg=1
