@@ -194,18 +194,6 @@
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.neuralnetworks</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>apunn</instance>
-            <instance>gpunn</instance>
-        </interface>
-        <fqname>@1.1::IDevice/apunn</fqname>
-        <fqname>@1.1::IDevice/gpunn</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -253,28 +241,6 @@
         <fqname>@1.2::ISap/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>SIM1</instance>
-            <instance>SIM2</instance>
-        </interface>
-        <fqname>@1.0::ISecureElement/SIM1</fqname>
-        <fqname>@1.0::ISecureElement/SIM2</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -283,16 +249,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISensors/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.soundtrigger</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>ISoundTriggerHw</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.thermal</name>
@@ -355,14 +311,34 @@
         <fqname>@1.1::ISupplicant/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.agolddaemon</name>
+        <name>vendor.hct.hardware.gesturewake</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IAgoldDaemon</name>
+            <name>IGestureWake</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IAgoldDaemon/default</fqname>
+        <fqname>@1.0::IGestureWake/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.hct.hardware.obtainvendor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IObtainVendor</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IObtainVendor/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.hct.hardware.sensorcali</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorCali</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISensorCali/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
@@ -395,16 +371,6 @@
         <fqname>@1.0::ICCAPControl/internal/0</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.camera.frhandler</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFRHandler</name>
-            <instance>internal/0</instance>
-        </interface>
-        <fqname>@1.0::IFRHandler/internal/0</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.camera.lomoeffect</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -413,16 +379,6 @@
             <instance>internal/0</instance>
         </interface>
         <fqname>@1.0::ILomoEffect/internal/0</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.camera.security</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureCamera</name>
-            <instance>internal/0</instance>
-        </interface>
-        <fqname>@1.0::ISecureCamera/internal/0</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.dfps</name>
@@ -589,7 +545,7 @@
     <hal format="hidl" override="true">
         <name>vendor.mediatek.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>3.11</version>
+        <version>3.20</version>
         <interface>
             <name>IRadio</name>
             <instance>imsrild1</instance>
@@ -604,14 +560,14 @@
             <instance>slot1</instance>
             <instance>slot2</instance>
         </interface>
-        <fqname>@3.11::IRadio/imsrild1</fqname>
-        <fqname>@3.11::IRadio/imsrild2</fqname>
-        <fqname>@3.11::IRadio/se1</fqname>
-        <fqname>@3.11::IRadio/se2</fqname>
-        <fqname>@3.11::IRadio/slot1</fqname>
-        <fqname>@3.11::IRadio/slot2</fqname>
-        <fqname>@3.11::ISap/slot1</fqname>
-        <fqname>@3.11::ISap/slot2</fqname>
+        <fqname>@3.20::IRadio/imsrild1</fqname>
+        <fqname>@3.20::IRadio/imsrild2</fqname>
+        <fqname>@3.20::IRadio/se1</fqname>
+        <fqname>@3.20::IRadio/se2</fqname>
+        <fqname>@3.20::IRadio/slot1</fqname>
+        <fqname>@3.20::IRadio/slot2</fqname>
+        <fqname>@3.20::ISap/slot1</fqname>
+        <fqname>@3.20::ISap/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.videotelephony</name>
