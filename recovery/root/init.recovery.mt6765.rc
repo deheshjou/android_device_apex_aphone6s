@@ -1,8 +1,6 @@
 import /trustkernel.rc
 
 on init
-    # Somehow AOSP build system hasn't provided a symlink here
-    symlink /system_root/system /system
     # Create a more standard /dev/block layout for our scripts
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
@@ -27,6 +25,9 @@ on init
     symlink /sbin/gatekeeper.mt6765.so /vendor/lib64/hw/gatekeeper.mt6765.so
     start hwservicemanager
     setprop crypto.ready 1
+
+on fs
+    export ANDROID_ROOT /system_root
 
 on property:ro.debuggable=0
     # distinguish USB shoulde connect or not, i.e. CDP vs SDP
