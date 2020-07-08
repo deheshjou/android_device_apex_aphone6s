@@ -1,0 +1,6 @@
+[
+ {
+   "repository": "android_kernel_apex_mt6765",
+   "target_path": "kernel/apex/mt6765"
+ }
+]
