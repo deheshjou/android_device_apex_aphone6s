@@ -43,11 +43,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
