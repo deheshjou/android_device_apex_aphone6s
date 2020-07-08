@@ -34,3 +34,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     dalvik.vm.heaptargetutilization=0.6 \
     dalvik.vm.heapminfree=8m \
     dalvik.vm.heapmaxfree=16m
+
+# Disable ccodec
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.stagefright.ccodec=0
