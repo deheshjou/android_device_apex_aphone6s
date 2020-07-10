@@ -61,6 +61,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.aphone6s
+
 # Trust HAL
 PRODUCT_PACKAGES += \
     lineage.trust@1.0-service

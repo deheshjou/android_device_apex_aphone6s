@@ -1,0 +1,9 @@
+type hal_touch_aphone6s, coredomain, domain;
+hal_server_domain(hal_touch_aphone6s, hal_lineage_touch)
+
+type hal_touch_aphone6s_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(hal_touch_aphone6s)
+
+# Allow access to gesture enable nodes
+allow hal_touch_aphone6s sysfs_touchscreen:dir search;
+allow hal_touch_aphone6s sysfs_touchscreen:file rw_file_perms;

@@ -1,1 +1,5 @@
+# Display
 genfscon proc /ged u:object_r:proc_ged:s0
+
+# Touchscreen
+genfscon sysfs /devices/platform/11007000.i2c0/i2c-0/0-005d u:object_r:sysfs_touchscreen:s0
