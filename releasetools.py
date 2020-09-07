@@ -34,6 +34,9 @@ def OTA_InstallEnd(info):
   PatchVendor(info)
   info.script.Print("Patching device-tree and verity images...")
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  AddImage(info, "scp.img", "/dev/block/bootdevice/by-name/scp1")
+  info.script.AppendExtra(
+      'package_extract_file("scp.img", "/dev/block/bootdevice/by-name/scp2");')
 
 def PatchVendor(info):
   info.script.Print("Patching vendor init scripts & libs...")
