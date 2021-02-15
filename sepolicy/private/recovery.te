@@ -1,3 +1,1 @@
-type recovery;
-
 allow recovery block_device:blk_file { ioctl };
